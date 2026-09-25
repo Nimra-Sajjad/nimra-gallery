@@ -8,7 +8,7 @@ import {
   hashPassword,
   createSessionToken,
   verifySessionToken,
-} from './store';
+} from './store.js';
 import type { DesignItem, VideoItem, PortfolioInfo, ContactMessage } from '../src/types';
 
 const UPLOADS_BUCKET = process.env.SUPABASE_UPLOADS_BUCKET || 'uploads';
