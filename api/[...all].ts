@@ -1,5 +1,5 @@
 import serverless from 'serverless-http';
-import { createApp } from '../server/app';
+import { createApp } from '../server/app.js';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 // Vercel serverless entry point. The [...all] filename makes this function
