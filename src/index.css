@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Syne', system-ui, -apple-system, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+    /* Bright Pastel Palette */
+    --pastel-cream: #FFF8EE;
+    --pastel-pink: #F8DDE6;
+    --pastel-lavender: #E7DDF7;
+    --pastel-powder-blue: #DCEEFF;
+    --pastel-mint: #DDF3E8;
+    --pastel-peach: #FFE1D2;
+    --pastel-yellow: #FFF1C9;
+    --pastel-coral: #F6C9C5;
+    --pastel-dark-text: #242424;
+    --pastel-muted-text: #5C5650;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--pastel-cream);
+    color: var(--pastel-dark-text);
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    color: var(--pastel-dark-text);
+  }
+}
+
+/* Hide scrollbars for clean viewer modals while retaining scrollability */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
