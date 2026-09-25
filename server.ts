@@ -1,7 +1,6 @@
 import path from 'path';
 import { createServer as createViteServer } from 'vite';
-import { createApp } from './server/app';
-
+import { createApp } from './server/app.js';
 // This entry point is for traditional / VPS / Docker hosting (npm run dev,
 // npm start). If you're deploying to Vercel, api/[...all].ts is used
 // instead and this file isn't invoked.
