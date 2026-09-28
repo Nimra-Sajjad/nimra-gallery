@@ -72,7 +72,7 @@ export const AdminPage: React.FC<AdminPageProps> = ({ onReturnToPublic }) => {
 
   // If not authenticated, show Admin Login view
   if (!isAuthenticated) {
-    return <AdminLogin onLoginSuccess={fetchAdminData} onExitToPublic={onReturnToPublic} />;
+    return <AdminLogin onLoginSuccess={() => {}} onExitToPublic={onReturnToPublic} />;
   }
 
   return (
